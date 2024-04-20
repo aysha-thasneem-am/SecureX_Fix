@@ -1,0 +1,56 @@
+secret key: JtWqCMoFRe7vHdO28EFnWTBtgjWH4y85qSkiYHC4FZTUbY35haGLpirMrfdmfU4gwLpuWfGjZg-WupxVE_qkYg
+
+client id: d864d6bdb29f0bfb8ddc8d6f256d68b1
+
+//Added Code
+
+You
+15:03
+0xee798AC0aB4eACE034fa3e6A50f4fb68d766F102
+Hover over a message to pin it
+keep
+Shiyas Mohammed
+15:11
+yarn add @thirdweb-dev/react
+Shiyas Mohammed
+15:12
+<ThirdwebProvider
+                clientId={process.env.THIRDWEB_CLIENT_ID} 
+            >
+</ThirdwebProvider>
+import { ThirdwebProvider } from "@thirdweb-dev/react";
+Shiyas Mohammed
+15:14
+export function convertIPFSUriToUrl(ipfsUri: string): string {
+
+    if (ipfsUri.includes("ipfs://")) {
+        return ipfsUri.replace("ipfs://", "https://ipfs.io/ipfs/")
+    }
+    return ipfsUri
+}
+Shiyas Mohammed
+15:15
+const uploadDataToIPFS = async (): Promise<string> => {
+        const uris = await upload({ data: Array.from(evidenceDoc) });
+        return uris[0]
+    }
+Shiyas Mohammed
+15:17
+export async function storeFiles(files: any) {
+  const { mutateAsync: upload } = useStorageUpload();
+  const uris = await upload({ data: Array.from(files) });
+  return convertIPFSUriToUrl[uris[0]];
+}
+Shiyas Mohammed
+15:18
+import { useStorageUpload } from "@thirdweb-dev/react"
+Shiyas Mohammed
+15:26
+const { mutateAsync: upload } = useStorageUpload();
+async function storeFiles(files: any) {
+  const uris = await upload({ data: Array.from(files) });
+  return convertIPFSUriToUrl(uris[0]);
+}
+Shiyas Mohammed
+15:28
+const ipfsLink = storeFiles(file);
