@@ -21,7 +21,7 @@ the data cannot be changed after it has been successfully uploaded to the blockc
 
 
 
-</div>
+<!-- </div>
 
 ## Why we made SecureX ❓
 
@@ -104,4 +104,4 @@ npm run dev
     | 4        | Neha Susan Manoj                  |
     | 5        | Shiyas Mohammed                   |
     
-
+ -->
