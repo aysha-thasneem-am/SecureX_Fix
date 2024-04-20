@@ -9,10 +9,8 @@
 
 <div align="center">
 
-# SecureX 🔐
+# SecureX 🔐  
 
-[![DOCS](https://img.shields.io/badge/Documentation-see%20docs-green?style=flat-square&logo=appveyor)](https://github.com/hashirpm/secureX/blob/main/README.md) 
-[![UI ](https://img.shields.io/badge/User%20Interface-Link%20to%20UI-orange?style=flat-square&logo=appveyor)](https://securex-dapp.vercel.app/)
 
 SecureX is a blockchain-based evidence management system to prevent manipulation in Indian courts.
 
